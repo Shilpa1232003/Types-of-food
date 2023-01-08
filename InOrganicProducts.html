@@ -1,0 +1,57 @@
+<html>
+<head>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<title>Organic Products</title>
+<script src="jquery.js"> </script>
+<style>
+#A{
+width:100%;
+padding:10px;
+background-color:black;
+color:white;
+text-align:center;
+cursor:pointer;
+}
+#B{
+width:100%;
+padding:10px;
+height:400px;
+background-color:rgb(221, 234, 233);
+color:black;
+}
+</style>
+</head>
+<body>
+    <a href="home.html" style="text-decoration:none">HOME</a>
+<h1 align="center" class="text-primary"> Inorganic Products</h1>
+<h2><div id="A">Food products </div></h2>
+<div id="B"> 
+<ol>
+    <h3>
+    <li>Maggi Noodles, Nestle;Sunfeast YiPPee, ITC</li>	
+    <li>MTR Sevai, MTR Foods</li>
+    <li>Fusilli Pasta, Disano</li>
+    <li>French Fries, McCain Foods </li>
+    <li>Rava Idali Mix, Nilons </li>
+    <li>Corn Flakes, Kwality</li>
+    <li>Frozen Chicken, Venky’s</li>
+   <li> Tropicana</li>
+   <li>Safal by Mother Dairy </li>
+   <li> Minute Maid by Coca-Cola </li>
+
+</h3>
+</ol>
+</div>
+<h4 class="text-danger text-center">"Instant foods are not good for health"</h4>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#B").hide();
+	$("#A").click(function(){
+		$("#B").slideToggle(1000);
+		});
+});
+</script>
+</body>
+</html>
